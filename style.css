@@ -1,0 +1,17 @@
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input:focus {
+  color: red;
+}
