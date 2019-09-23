@@ -1,17 +1,20 @@
-p,
-label {
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-input {
-    margin: .4rem;
-}
-
-
 label {
     display: block;
-    margin-bottom: 10px;
+    font: 1rem 'Fira Sans', sans-serif;
 }
-input:focus {
-  color: red;
+input,
+label {
+    margin: .4rem 0;
+}
+.naam {
+    display: table-cell;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+textarea {
+    border: solid red 1px;
+}
+textarea:active{
+    border: solid green;
 }

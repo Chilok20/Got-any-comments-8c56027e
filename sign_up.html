@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <Title>Typ hier je pincode</Title> 
+  <Title>Insert Form Data in MYsql Database using PHP</Title> 
   <link rel = "stylesheet"
    href = "style.css" type = "text/css" />
 
 </head> 
 <body>
-  <p><strong>Dit is mijn bank</strong></p>
   <label for="name">Name (4 to 8 characters):</label>
   <input type="text" id="name" name="name" required
        minlength="8" maxlength="10" size="15">
-
-  <form action="Formserver.html" method="get">
-    <input type="submit" value="Save">
-  </form>
 
   <!-- Simple form which will send a POST request -->
   <!-- Form with fieldset, legend, and label -->
   <form action="sign_up.html" method="post">
     <script src="script.js"></script>
-    <fieldset>
+    
       <div>
       <label for="pass">Password (8 characters minimum):</label>
       <input type="password" id="pass" name="password"
              minlength="8" required>
   </div>
-    </fieldset>
+    
   </form>
 
   <form action="" method="get" class="form-example">
@@ -41,17 +36,13 @@
         <input type="tel" name="tel" value="Mobiel number"
       <input type="submit" value="Send">
   <div>
-    <p>Hou je van voetbal?</p>
-
-<div>
-  <input type="checkbox" id="Ja" name="Ja"
-         checked>
-  <label for="Ja">Ja</label>
-</div>
-
-<div>
-  <input type="checkbox" id="Nee" name="Nee">
-  <label for="Nee">Nee</label>
+    <form>
+      <label>Houd je van voetbal?</label>
+        <input type="radio" name="voetbal" value="Ja">
+      Ja<br>
+      <input type="radio" name="voetbal" value="nee">Nee<br>
+      <input type="submit" value="Submit">
+</form>
 </div>
 <div>
 
@@ -73,49 +64,25 @@
     <option value="Utrecht">Utrecht</option>
     <Option value="Zeeland">Zeeland</Option></Select></span>
 </Select>
-<p>Choose your favorite day</p>
+<div>
+<label><p>Choose your favorite day</p></label>
 
-<div>
-  <input type="checkbox" id="Maandag" name="Maandag"
-         checked>
-  <label for="Maandag">Maandag</label>
+<form>
+  <input type="radio" name="date" value="Maandag">Maandag<br>
+  <input type="radio" name="date" value="Dingsdag">Dingsdag<br>
+  <input type="radio" name="date" value="woensdag">woensdag<br><input type="radio" name="date" value="donderdag">donderdag<br><input type="radio" name="date" value="vrijdag">vrijdag<br><input type="radio" name="date" value="zaterdag">zaterdag<br><input type="radio" name="date" value="zondag">zondag<br>
+  
+</form>
 </div>
 
-<div>
-  <input type="checkbox" id="Dingsdag" name="Dingsdag">
-  <label for="horns">Dingsdag</label>
+
 </div>
 <div>
-  <input type="checkbox" id="woensdag" name="woensdag"
-         checked>
-  <label for="woensdag"> woensdag"</label>
-</div>
-<div>
-  <input type="checkbox" id="woensdag" name="woensdag"
-         checked>
-  <label for="Maandag">Donderdag</label>
-</div>
-<div>
-  <input type="checkbox" id="Maandag" name="Maandag"
-         checked>
-  <label for="Maandag">Vrijdag</label>
-</div>
-<div>
-  <input type="checkbox" id="Maandag" name="Maandag"
-         checked>
-  <label for="Maandag">Zaterdag</label>
-</div>
-<div>
-  <input type="checkbox" id="Maandag" name="Maandag"
-         checked>
-  <label for="Maandag">Zondag</label>
-</div>
-<div>
-  <button style="height:25px;width:100px"value="sumbit">Send</button>
+  <button style="height:25px;width:100px"value="submit">Submit</button>
 </div>
 <label for="Comments">Tell me your comments</label>
 
-<textarea id="Comments" name="story" rows="25" cols="50" style="border:solid 3px orange;">
+<textarea id="Comments" name="story" rows="25" cols="50" style="border: medium dashed green 3px red;">
   typ here your arena text
 </textarea>
  <button style="height:25px;width:100px"value="sumbit">Send</button>
